@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import hero from "../assets/hero.jpg";
 import { services } from "../data/site.js";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Account Solutions, Kothamangalam";
+  }, []);
+
   return (
     <main>
       <section className="relative overflow-hidden bg-navy text-navy-foreground">
@@ -20,8 +25,8 @@ export default function Home() {
             A clear path through <em className="text-gold">accounts & taxes</em>
           </h1>
           <p className="mt-6 max-w-xl text-lg opacity-80">
-            Bookkeeping, income tax, GST and business planning — handled carefully
-            so you can focus on growing.
+            Bookkeeping, income tax, GST and business planning — handled
+            carefully so you can focus on growing.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/services" className="btn-gold">
@@ -64,9 +69,18 @@ export default function Home() {
       <section className="bg-secondary">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-3">
           {[
-            ["Local & personal", "Meet us face to face at PO Junction — no call centres."],
-            ["On-time filings", "We track your deadlines so penalties never surprise you."],
-            ["Honest advice", "Clear explanations and transparent fees, every time."],
+            [
+              "Local & personal",
+              "Meet us face to face at PO Junction — no call centres.",
+            ],
+            [
+              "On-time filings",
+              "We track your deadlines so penalties never surprise you.",
+            ],
+            [
+              "Honest advice",
+              "Clear explanations and transparent fees, every time.",
+            ],
           ].map(([t, d]) => (
             <div key={t}>
               <h3 className="text-2xl text-primary">{t}</h3>
@@ -77,7 +91,9 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <h2 className="text-4xl text-primary">Ready to get your accounts in order?</h2>
+        <h2 className="text-4xl text-primary">
+          Ready to get your accounts in order?
+        </h2>
         <Link to="/contact" className="btn-gold mt-8">
           Find our office
         </Link>
