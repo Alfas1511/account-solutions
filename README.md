@@ -1,7 +1,6 @@
-# Clearpath Accounts Solutions — React (JSX) + Vite + Tailwind CSS
+# Account Solutions — React (JSX) + Vite + Tailwind CSS
 
-A plain JavaScript version of the Clearpath Accounts Solutions website.
-No TypeScript — every file is `.jsx` / `.js`.
+A plain JavaScript version of the Account Solutions website.
 
 ## Run it
 
