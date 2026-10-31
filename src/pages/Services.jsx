@@ -4,7 +4,7 @@ import { services } from "../data/site.js";
 
 export default function Services() {
   useEffect(() => {
-    document.title = "Services — Account Solutions, Kothamangalam";
+    document.title = "Services — Accounts Solutions, Kothamangalam";
   }, []);
 
   return (

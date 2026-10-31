@@ -3,7 +3,7 @@ import { maps, site } from "../data/site.js";
 
 export default function Contact() {
   useEffect(() => {
-    document.title = "Contact — Account Solutions, Kothamangalam";
+    document.title = "Contact — Accounts Solutions, Kothamangalam";
   }, []);
 
   return (

@@ -6,8 +6,8 @@ import accounting from "../assets/accounting.jpeg";
 import internalAudit from "../assets/internal-audit.jpeg";
 
 export const site = {
-  name: "Account Solutions",
-  short: "Account Solutions",
+  name: "Accounts Solutions",
+  short: "Accounts Solutions",
   address: [
     "First Floor,",
     "Oliapuram Shopping Complex",
